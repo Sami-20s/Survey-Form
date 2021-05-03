@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ROBOTO FONT LINK -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"
+    <!-- TITLE -->
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="tilte">freecodecamp.<span id="org">org</span></h1>
+        <p id="description">the place where you joy while coding</p>
+    </header>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" name="number" id="number" placeholder="Enter your number" min="18" max="50" required>
+        <label for="dropdown" id="dropdown-label">What is your level in code ?</label>
+        <select name="dropdown" id="dropdown">
+            <option value="" disabled selected value>Select your level</option>
+            <option value="Beginner">Beginner's level</option>
+            <option value="Middle">Middle level</option>
+            <option value="High">High level</option>
+        </select>
+        <label for="gender" id="gender-label">What is your gender ?</label>
+            <div class="male"><span><input type="radio" name="gender-name" value="male"> <label for="male" id="male">Male</label></span></div>
+            <div class="female"><span><input type="radio" name="gender-name" value="female"> <label for="female" id="female">Female</label></span></div>
+            <div class="not-sure"><span><input type="radio" name="gender-name" value="female"> <label for="not-sure" id="not-sure">Not sure</label></span></div>
+        <label for="knowlodge" id="knowlodge-label">What are the programming languages ​​that you know ?</label>
+            <div class="python"><span><input type="checkbox" name="lan" id="" value="python"> <label for="lan">Python</label></span></div>
+            <div class="html"><span><input type="checkbox" name="lan" id="" value="HTML"> <label for="lan">HTML</label></span></div>
+            <div class="css"><span><input type="checkbox" name="lan" id="" value="css"> <label for="lan">CSS</label></span></div>
+            <div class="javascript"><span><input type="checkbox" name="lan" id="" value="javascript"> <label for="lan">Javascript</label></span></div>
+            <div class="php"><span><input type="checkbox" name="lan" id="" value="php"> <label for="lan">PHP</label></span></div>
+            <div class="ruby"><span><input type="checkbox" name="lan" id="" value="ruby"> <label for="lan">RUBY</label></span></div>
+        <label for="qu" id="qu">Any comments or suggestions ?</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
